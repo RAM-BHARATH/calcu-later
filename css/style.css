@@ -1,0 +1,78 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    background-color: aliceblue;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    font-size: 3em;
+}
+p{
+    font-size: 1.5em;
+}
+div{
+    font-size: 1.2em;
+}
+header{
+    width: 100vw;
+    background-color: brown;
+    text-align: center;
+    padding: 20px 0;
+}
+.main-container{
+    display:grid;
+    width: 300px;
+    /* height: 500px; */
+    background-color: #d37508;
+    padding: 10px;
+    grid-template-rows: 50px auto;
+    grid-row-gap:5px;
+    justify-items: center;
+    margin:5% auto;
+}
+.display{
+    width: 280px;
+    background-color: white;
+    grid-row: 1/2;
+    margin:0 auto;
+}
+.keypad{
+    width: 280px;
+    display: grid;
+    grid-row: 2/3;
+    grid-template-rows: repeat(5,65px);
+    grid-row-gap:2px ;
+    grid-column-gap:1px;
+    grid-template-columns: repeat(4,69px);
+}
+.button{
+    box-sizing: border-box;
+    background-color: #3ba58a;
+    text-align: center;
+    padding-top:20px;
+    border:1px black solid;
+    border-radius: 5px;
+}
+.button:active{
+    transform: scale(1.02);
+}
+.operator, .equalOperator, .dotOption{
+    background-color: rgb(58, 111, 136);
+}
+.option{
+    background-color: rgb(87, 177, 94);
+}
+.display{
+    font-size: 3em;
+}
+.display span{
+    float: right;
+}
+
+#name-card{
+    width: 100%;
+    text-align: left;
+}
